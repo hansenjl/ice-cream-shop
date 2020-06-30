@@ -1,0 +1,9 @@
+<h1><%= @user.username %></h1>
+
+<h2>Ice Creams reviewed by <%= @user.username%>:</h2>
+
+<% @user.ice_creams.each do |ic|%>
+    <a href="/ice_creams/<%= ic.id%>"><%= ic.flavor%></a>
+<% end %>
+
+

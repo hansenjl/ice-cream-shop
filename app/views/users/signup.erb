@@ -1,0 +1,10 @@
+<h1>Sign Up</h1>
+<p><%= @error %></p>
+
+<form action="/signup" method="post">
+    <label>Username:</label><input type="text" name="user[username]"><br>
+    <label>Email:</label><input type="email" name="user[email]"><br>
+    <label>Password:</label> <input type="password" name="user[password]"><br>
+    <input type="submit" value="sign up">
+
+</form>

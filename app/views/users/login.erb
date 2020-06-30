@@ -1,0 +1,9 @@
+<h1>Log In</h1>
+<p><%= @error %></p>
+
+<form action="/login" method="post">
+    <label>Username:</label><input type="text" name="user[username]"><br>
+    <label>Password:</label><input type="password" name="user[password]"><br>
+    <input type="submit" value="log in">
+
+</form>
